@@ -1,0 +1,1 @@
+python train.py --last-layer --save-frequency 30 --zeroshot-frequency 1 --report-to tensorboard --train-data="dataset/train.csv"  --val-data="dataset/val.csv"  --csv-img-key filepath --csv-caption-key title --warmup 100 --batch-size=128 --lr=1e-4 --wd=0.1 --epochs=30 --workers=8 --model RN50  --pretrained openai
